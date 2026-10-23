@@ -1,0 +1,1 @@
+{"agent_name":"موس","agent_user_id":"agent-mous","brokers":["wss://broker.emqx.io:8084/mqtt","wss://broker.hivemq.com:8884/mqtt"],"room_code":"YOUR-12-CHAR-ROOM-CODE"}

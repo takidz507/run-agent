@@ -1,0 +1,15 @@
+[Unit]
+Description=Run Agent Bridge — Muse as a permanent member of the Run Agent room
+After=network-online.target
+
+[Service]
+Type=simple
+WorkingDirectory=/home/hatch/workspace/run-agent
+Environment=HOME=/home/hatch
+Environment=PYTHONPATH=/home/hatch/.local/lib/python3.12/site-packages
+ExecStart=/usr/bin/python3 /home/hatch/workspace/run-agent/bridge.py
+Restart=always
+RestartSec=5
+
+[Install]
+WantedBy=multi-user.target
